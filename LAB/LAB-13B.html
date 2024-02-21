@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB-13B</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            height: 98vh;
+
+        }
+        .first{
+            background-color: rgb(68, 66, 66);
+            height: 100%;
+
+        }
+        .header{
+            height: 15%;
+            background-color: black;
+            overflow: hidden;
+
+        }
+        .link{
+            float: right;
+            height: 20px;
+            padding-right:10px ;
+            padding-top: 35px;
+        }
+        .dow{
+            color: white;
+            background-color: rgb(65, 120, 221);
+            border-radius: 50px;
+            float: right;
+            margin: 25px;
+            height: 45px;
+            font-family: cursive;
+        }
+        .temp button{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            float: right;
+            padding-right: 20px;
+            padding-top: 35px;
+        }
+        .temp a{
+            display: block;
+            text-decoration: none;
+            background-color: rgba(173, 180, 185, 0.945);
+            color: rgb(0, 0, 0);
+        }
+        .temp .temp-content{
+            display: none;
+            position: absolute;
+            min-width: 50px;
+            text-align: center;
+            box-shadow: 2px 2px 3px rgb(62, 62, 65);
+        }
+        .temp:hover .temp-content{
+            display: block;
+            margin-left: 850px;
+            margin-top: 70px;
+            
+        }
+        .temp1 button{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            float: right;
+            padding-right: 20px;
+            padding-top: 35px;
+        }
+        .temp1 a{
+            display: block;
+            text-decoration: none;
+            background-color: rgba(173, 180, 185, 0.945);
+            color: rgb(0, 0, 0);
+        }
+        .temp1 .temp-content1{
+            display: none;
+            position: absolute;
+            min-width: 50px;
+            text-align: center;
+            box-shadow: 2px 2px 3px rgb(62, 62, 65);
+        }
+        .temp1:hover .temp-content1{
+            display: block;
+            margin-left: 700px;
+            margin-top: 70px;
+            
+        }
+        /*main*/
+        .main{
+            height: 85%;
+            background-color: rgb(68, 66, 66);
+        }
+        .allevent{
+            margin-left: 10%;
+            width: 80%;
+            height: 30%;
+            margin-top: 10px;
+            background-image: url(All_event.jpg);
+            background-repeat: no-repeat;
+            background-position: -00px -170px ;
+            text-align: right;
+            color: aliceblue;
+            padding-top: 40px;
+            padding-right: 40px;
+            font-size: 40px;
+            font-family:cursive;
+        }
+        .four{
+            margin-left: 10%;
+            background-color: rgb(68, 66, 66);
+
+        }
+        #center{
+            margin-left: 2%;
+        }
+        .sub-main{
+            margin-top: 2%;
+            height: 340px;
+            width: 20%;
+            float: left;
+            background-color: white;
+            font-family:cursive ;
+        }
+        .text{
+            color: rgb(129, 123, 123);
+            font-size: 12px;
+            padding-left: 5px;
+        }
+        .head{
+            font-size: 25px;
+            color: black;
+            padding-left: 5px;
+
+        }
+        .see{
+            border-radius: 10px;
+            color: white;
+            background-color: rgb(43, 230, 230);
+            text-align: center;
+            border: none;
+            margin-left: 70px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+        
+      
+    </style>
+</head>
+<body>
+    <div class="first">
+        <div class="header">
+            <div class="logo" style="padding-top: 5px; padding-left: 10px; float: left;"><img src="logo1-white.png" height="70px"></div>
+            <div class="soundamp" style="color: rgb(216, 192, 192); font-size: 40px; padding-top: 20px; padding-left:25 px; font-family: Verdana, sans-serif; float: left;">SoundAMP</div>
+            <div class="link"><a href="https://twitter.com/"><img src="twitter.webp" height="20px" width="20px"></a></div>
+            <div class="link"><a href="https://www.instagram.com/"><img src="instagram.png" height="20px" width="20px"></a></div>
+            <div class="link"><a href="https://in.pinterest.com/"><img src="pintrest.webp" height="20px" width="20px"></a></div>
+            <div class="link"><a href="https://in.linkedin.com/"><img src="linkedin.webp" height="20px" width="20px"></a></div>
+            <div class="link"><a href="https://www.google.co.in/"><img src="google.png" height="20px" width="20px"></a></div>
+            <div class="link"><a href="https://www.facebook.com/"><img src="facebook.webp" height="20px" width="20px"></a></div>
+            <div class="link"><a href="https://www.youtube.com/?gl=IN"><img src="youtube.png" height="20px" width="20px"></a></div>
+            <button class="dow">Download Now</button> 
+            <div class="temp">
+                <button>More HTML Templates </button>
+                <div class="temp-content">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                </div>
+            </div>
+            <div class="temp1">
+                <button>HTML Templates </button>
+                <div class="temp-content1">
+                    <a href="#">A</a>
+                    <a href="#">B</a>
+                    <a href="#">C</a>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="allevent">ALL EVENT</div>
+            <div class="four">
+                <div class="sub-main">
+                    <img src="night_leaser_show.jpg" height="170px" width="240px">
+                    <span class="text">10/05/2018</span><br>
+                        <span class="head"><b>Night leaser show</b></span>
+                    <span class="text">   <br>#hip-hop #mb #dance<br>
+                    we are happy to announce this special leaser show. </span><br>
+                    <button class="see">See more...</button>
+                    
+                </div>
+                <div class="sub-main" id="center">
+                    <img src="Live_music.jpg" height="170px" width="240px">
+                    <span class="text">14/05/2018</span><br>
+                        <span class="head"><b>Live Music</b></span>
+                    <span class="text">   <br>#live #rock #alternative<br>
+                        Special event for our rock fans! <br>Live Music show </span><br>
+                    <button class="see">See more...</button>
+                    </div>
+                <div class="sub-main" id="center">
+                    <img src="DJ.jpg" height="170px" width="240px">
+                    <span class="text">10/04/2018</span><br>
+                        <span class="head"><b>DJ-Master Class</b></span>
+                    <span class="text">   <br>#DJ #Master-class<br>
+                        DJ WoodSmell will teach you new tricks:please sing up.</span><br>
+                    <button class="see">See more...</button>
+                    </div>
+                </div>
+                <div class="sub-main" id="center">
+                    <img src="Party_night.jpg" height="170px" width="266px">
+                    <span class="text">14/05/2018</span><br>
+                        <span class="head"><b>Best Night Party</b></span>
+                    <span class="text">   <br>#party #club<br>
+                        Our traditional event:best hits all<br> night long.</span><br>
+                    <button class="see">See more...</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+</body>
+</html>
